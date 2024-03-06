@@ -1,0 +1,536 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/*Resetear los rems => 62.5% equivalga a 10 px  de 16px, del tamaño original*/
+
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    width: 100%;
+    text-align: center;
+
+}
+/*lo de arriba tienes que ir si o si, siempre*/
+a{
+    text-decoration:none;
+    color: black;
+}
+/*HEADER*/
+.BGray{
+    background-color: #d4dff0;
+}
+header{
+    height: auto;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: .5rem;
+}
+.diezp{
+    width: 10%;
+}
+.diezp img{
+    width: 100%;
+    height: 8rem;
+}
+.setenop{
+    width: 78%;
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+    margin-left: 13rem;
+    height: 100%;
+    padding-top: 2.5rem;
+}
+.lista a{
+    margin-right: 2rem;
+}
+.trecep{
+    width: 12%;
+}
+.trecep div{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 4rem;
+    padding-top: 0.2rem;
+    margin-top: 1.5rem;
+    border-radius: 3rem;
+}
+.trecep a{
+    color: white;
+    font-size: 1.8rem;
+}
+.noventa{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/**/
+main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+}
+/**/
+.divide{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 8rem;
+}
+.cuacinco{
+    width: 45%;
+}
+.cuacinco:nth-child(2){
+    margin-left: 10%;
+}
+h1{
+    font-size: 6rem;
+    font-weight: 900;
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.parra{
+    width: 80%;
+    margin-bottom: 4rem;
+    margin-top: -2rem;
+}
+.mmm{
+    font-size: 2rem;
+    height: 6rem;
+    font-weight: 700;
+}
+.mmm i{
+    margin-right: 3rem;
+    font-size: 4rem;
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.mmm a{
+    padding-bottom: 1rem;
+}
+.subirr{
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/*FORM*/
+form{
+    padding: 2rem;
+}
+label{
+    font-weight: 600;
+}
+input{
+    width: 100%;
+    height: 4.5rem;
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+    padding: 0.6rem 1rem 0.6rem 2rem;
+}
+.enviar{
+    cursor: pointer;
+}
+textarea{
+    width: 100%;
+    height: 14rem;
+    border-radius: 0.7rem;
+    margin: 1.5rem 0;
+    padding: 0.6rem 1rem 0.6rem 2rem;
+    resize:none;
+}
+.Input{
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    width: 35%;
+    font-size: 2rem;
+    padding: 0;
+    border-radius: 2rem;
+    font-weight: 600;
+    height: 5rem;
+}
+/*FRECUENTLY*/
+h2{
+    font-size: 6rem;
+    font-weight: 700;
+}
+h2 span{
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.parra:nth-child(2){
+    margin-top: 3rem;
+}
+.h3{
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    width: 33%;
+    font-size: 2rem;
+    padding: 0;
+    border-radius: 2rem;
+    font-weight: 600;
+    height: 5rem;
+}
+.h3 h3{
+    margin-top: 1rem;
+}
+.questions{
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 1px gray;
+    height: 10rem;
+    padding-top: 3rem;
+}
+.questions h2{
+    font-size: 2rem;
+    width: 80%;
+}
+.questions button{
+    font-size: 3rem;
+    width: 10%;
+    margin-left: 10%;
+    margin-top: -3rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer
+}
+/**/
+/*FOOTER*/
+.footer{
+    padding-top: 24rem;
+    margin-top: -18rem;
+    padding-bottom: 5rem;
+}
+.fheader{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-top: solid 2px rgb(61, 61, 61);
+    
+}
+.mover{
+    margin-left: 25%;
+    margin-top: 3rem;
+}
+
+
+
+/*END*/
+.end{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5rem;
+}
+.end p{
+    width: 40%;
+    text-align: initial;
+    font-weight: 500;
+}
+.Redes{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 60%;
+}
+.Redes a{
+    width: 6rem;
+    height: 6rem;
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    border-radius: 3rem;
+}
+.Redes i{
+    font-size: 4rem;
+    background-color: #d4dff0;
+    border-radius: 3rem;
+    padding: 0.7rem;
+    margin: 0.3rem;
+    width: 90%;
+}
+/**/
+.nav-icon{
+    display: none;
+    
+}
+@media(max-width: 768px){
+    
+    .Noventa{
+        padding-top: 6rem;
+    }
+    /*header*/
+    .header{
+        padding-top: 4rem;
+    }
+    .diezp {
+        width: 25%;
+    }
+    .setenop{
+        width: 50%
+    }
+    .trecep{
+        width: 25%;
+    }
+    
+    .lista a{
+        margin-bottom: 2.5rem;
+    }
+    /**/
+    h1 {
+        margin-top: 10rem;
+    }
+    .divide {
+        display: flex;
+        flex-direction: column;
+    }
+    .cuacinco {
+        width: 65%;
+    }
+    .cuacinco:nth-child(2) {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 4rem;
+    }
+    .divide .cuacinco:nth-child(1){
+        width: 75%;
+    }
+    .questions{
+        height: 12rem;
+    }
+    .questions h2 {
+        font-size: 2.7rem;
+    }
+    /*FOOTER*/
+    .mover{
+        margin-left: 1rem;
+    }
+    .lista{
+        margin-left: 5%;
+    }
+    .mover .lista a{
+        background-image: none;
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+    .mover .lista a:nth-child(3){
+        display: none;
+    }
+    .mover .lista a:nth-child(5){
+        display: none;
+    }
+    .veinp img{
+        width: 100%;
+    }
+    
+    .end p{
+        width: 100%;
+        text-align: initial;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .Redes{
+        width: 50%;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        padding-left: 0;
+        margin-top: -0.1rem;
+    }
+    .Redes a:nth-child(2){
+        margin-left: 1rem;
+    }
+    .Redes a:nth-child(3){
+        margin-left: 1rem;
+    }
+}
+@media(max-width: 500px){
+    .nav-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 3rem;
+        margin-left: 80%;
+    }
+    
+    .nav-content {
+        position: relative;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+    
+    .nav-content.active {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-left: -10%;
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 8rem;
+    }
+    .Noventa{
+        padding-top: 6rem;
+    }
+    /*header*/
+    .header{
+        padding-top: 4rem;
+    }
+    .setenop {
+        width: 100%;
+    }
+    .diezp {
+        width: 25%;
+    }
+    .trecep{
+        display: none;
+    }
+    .lista a{
+        background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+        /* -webkit-background-clip: text; */
+        /* color: transparent; */
+        border-radius: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    /**/
+    .h3{
+        width: 53%;
+    }
+    .questions {
+        height: 17rem;
+        margin-top: -3rem;
+    }
+    /*FOOTER*/
+    .footer{
+        padding-bottom: 16rem;
+    }
+    .fheader{
+        display: flex;
+        flex-direction: column;
+    }
+    .mover{
+        margin-left: 1rem;
+    }
+    .lista{
+        margin-left: 15%;
+    }
+    .mover .lista a{
+        background-image: none;
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+    .mover .lista a:nth-child(3){
+        display: none;
+    }
+    .mover .lista a:nth-child(5){
+        display: none;
+    }
+    .veinp img{
+        width: 100%;
+    }
+    .end{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .end p{
+        width: 100%;
+        text-align: initial;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .Redes{
+        width: 50%;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        padding-left: 0;
+    }
+    .Redes a:nth-child(2){
+        margin-left: 1rem;
+    }
+    .Redes a:nth-child(3){
+        margin-left: 1rem;
+    }
+}
+@media(max-width: 490px){
+    .divide .cuacinco:nth-child(1) {
+        width: 100%;
+    }
+    .parra {
+        width: 100%;
+    }
+    .Input {
+         width: 45%;
+    }
+    h2 {
+        font-size: 5.3rem;
+    }
+
+}
+@media(max-width: 450px){
+    .nav-content.active {
+        margin-top: 5rem;
+    }
+    .divide .cuacinco:nth-child(1) {
+        width: 100%;
+    }
+    .parra {
+        width: 100%;
+    }
+    .Input {
+        width: 55%;
+    }
+    h2 {
+        font-size: 4.9rem;
+    }
+    .mover {
+        margin-left: 0;
+    }
+}
+@media(max-width: 400px){
+    h1 {
+        font-size: 5.3rem;
+    }
+    h2 {
+        font-size: 3.8rem;
+    }
+    .questions h2 {
+        font-size: 2.2rem;
+        width: 75%;
+    }
+    .questions button {
+        margin-left: 5%;
+    }
+    .lista {
+        margin-left: 0;
+    }
+}

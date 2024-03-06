@@ -1,0 +1,393 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/*Resetear los rems => 62.5% equivalga a 10 px  de 16px, del tamaño original*/
+
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    width: 100%;
+    text-align: center;
+
+}
+/*lo de arriba tienes que ir si o si, siempre*/
+a{
+    text-decoration:none;
+    color: black;
+}
+/*lo de arriba tienes que ir si o si, siempre*/
+#mc_embed_signup{
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif;  
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    .newsletter {
+        width: 40%;
+        height: 45rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2rem 2rem 0 2rem;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        text-align: initial;
+        font-weight: 600;
+    }
+    form input {
+        width: 100%;
+        height: 4.5rem;
+        border-radius: 1rem;
+        margin: 1.5rem 0;
+        padding: 0.6rem 1rem 0.6rem 2rem;
+    }
+    form .Input {
+        background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+        width: 35%;
+        font-size: 2rem;
+        padding: 0;
+        border-radius: 2rem;
+        font-weight: 600;
+        height: 5rem;
+    }
+/*HEADER*/
+.BGray{
+    background-color: #d4dff0;
+}
+header{
+    height: auto;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: .5rem;
+}
+.diezp{
+    width: 10%;
+}
+.diezp img{
+    width: 100%;
+    height: 8rem;
+}
+.setenop{
+    width: 78%;
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+    margin-left: 13rem;
+    height: 100%;
+    padding-top: 2.5rem;
+}
+.lista a{
+    margin-right: 2rem;
+}
+.trecep{
+    width: 12%;
+}
+.trecep div{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 4rem;
+    padding-top: 0.2rem;
+    margin-top: 1.5rem;
+    border-radius: 3rem;
+}
+.trecep a{
+    color: white;
+    font-size: 1.8rem;
+}
+/*h1*/
+h1{
+    font-size: 4rem;
+    font-weight: 800;
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/**/
+.text{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: initial;
+    margin-bottom: 7rem;
+}
+/*¨*/
+main{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    background-color: white;
+    height: auto;
+    padding: 2rem;
+    border-radius: 3rem;
+    border: solid 2px rgb(245, 242, 242);
+}
+h2 span{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.subt p{
+    width: 100%;
+    text-align: inherit;
+}
+/*table*/
+table{
+    width: 100%;
+}
+tr{
+    width: 100%;
+}
+td{
+    height: 7rem;
+}
+.ttitle{
+    background-color: #d4dff0;
+    border: solid 3px white;
+    border-radius: 5px;
+}
+.sesenta{
+    width: 15%;
+}
+.subt{
+    background-color: #eaeef5;
+    border: solid 4px white;
+    border-radius: 5px;
+}
+.gray{
+    background-color: rgb(242, 243, 247);
+    border: solid 3px white;
+    border-radius: 5px;
+}
+.blue{
+    background-color: #d4dff0;
+    border: solid 3px white;
+    border-radius: 5px;
+}
+.texttt{
+    
+    font-weight: 300;
+    padding-left: 2rem;
+}
+.texttt button{
+    border: none;
+    background-color: transparent;
+}
+.initial i{
+    padding-top: .1rem;
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+/**/
+.cuarenta{
+    display: flex;
+    flex-direction: row;
+}
+h3{
+    width: 80%;
+    text-align: initial;
+}
+.cuarenta a{
+    width: 20%;
+    padding-top: 0.8rem;
+}
+/*fa-solid*/
+.initial{
+    text-align: initial;
+}
+.four{
+    text-align: center;
+}
+.fa-x{
+    color: rgb(0, 0, 0);
+}
+.fa-check{
+    background-image: linear-gradient(to right, #1cd29b, #27c9ea);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.fa-clipboard-question{
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/*BOTONES*/
+.botons a{
+    background: black;
+    color: white;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    font-weight: 900;
+}
+.botoness a{
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    font-weight: 800;
+}
+/*INFO*/
+#info1{
+    background-color: #d4dff0;
+}
+/**/
+/**/
+/*FOOTER*/
+.footer{
+    padding-top: 24rem;
+    margin-top: -18rem;
+    padding-bottom: 5rem;
+}
+.fheader{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-top: solid 2px rgb(61, 61, 61);
+    
+}
+.mover{
+    margin-left: 25%;
+    margin-top: 3rem;
+}
+
+
+
+/*END*/
+.end{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5rem;
+}
+.end p{
+    width: 40%;
+    text-align: initial;
+    font-weight: 500;
+}
+.Redes{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 60%;
+}
+.Redes a{
+    width: 6rem;
+    height: 6rem;
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    border-radius: 3rem;
+}
+.Redes i{
+    font-size: 4rem;
+    background-color: #d4dff0;
+    border-radius: 3rem;
+    padding: 0.7rem;
+    margin: 0.3rem;
+    width: 90%;
+}
+/**/
+.nav-icon{
+    display: none;
+    
+}
+@media(max-width: 768px){
+    
+    .Noventa{
+        padding-top: 6rem;
+    }
+    /*header*/
+    .header{
+        padding-top: 4rem;
+    }
+    .diezp {
+        width: 25%;
+    }
+    .setenop{
+        width: 50%
+    }
+    .trecep{
+        width: 25%;
+    }
+    
+    .lista a{
+        margin-bottom: 2.5rem;
+    }
+    /**/
+    main{
+        width: 95%;
+    }
+    td {
+        height: auto; 
+    }
+    /*FOOTER*/
+    .mover{
+        margin-left: 1rem;
+    }
+    .lista{
+        margin-left: 5%;
+    }
+    .mover .lista a{
+        background-image: none;
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+    .mover .lista a:nth-child(3){
+        display: none;
+    }
+    .mover .lista a:nth-child(5){
+        display: none;
+    }
+    .veinp img{
+        width: 100%;
+    }
+    
+    .end p{
+        width: 100%;
+        text-align: initial;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .Redes{
+        width: 50%;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        padding-left: 0;
+        margin-top: -0.1rem;
+    }
+    .Redes a:nth-child(2){
+        margin-left: 1rem;
+    }
+    .Redes a:nth-child(3){
+        margin-left: 1rem;
+    }
+}

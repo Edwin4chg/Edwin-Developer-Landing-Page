@@ -1,0 +1,540 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/*Resetear los rems => 62.5% equivalga a 10 px  de 16px, del tamaño original*/
+
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    text-align: initial;
+    margin: 0;
+    width: 100%;
+}
+
+a{
+    text-decoration:none;
+    color: black;
+}
+/*lo de arriba tienes que ir si o si, siempre*/
+
+/*HEADER*/
+.BGray{
+    background-color: #d4dff0;
+}
+header{
+    height: auto;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: .5rem;
+}
+.diezp{
+    width: 10%;
+}
+.diezp img{
+    width: 100%;
+    height: 8rem;
+}
+.setenop{
+    width: 78%;
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+    margin-left: 13rem;
+    height: 100%;
+    padding-top: 2.5rem;
+}
+
+.lista a{
+    margin-right: 2rem;
+}
+.trecep{
+    width: 12%;
+}
+.trecep div{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 4rem;
+    padding-top: 0.2rem;
+    margin-top: 1.5rem;
+    border-radius: 3rem;
+}
+.trecep a {
+    color: white;
+    font-size: 1.8rem;
+    margin-left: 2.2rem;
+}
+.noventa{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*ARRIBA*/
+.cincuenta{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+h4{
+    text-align: center;
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    padding-right: 30%;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+#IMG{
+    width: 100%;
+    height: 50rem;
+}
+/*ARTICLE*/
+main{
+    background-color: white;
+    margin-top: -10rem;
+    padding-top: 5rem;
+    margin-bottom: 10rem;
+    padding-bottom: 8rem;
+}
+.main{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+}
+.main h2{
+    font-size: 3rem;
+}
+.movement{
+    margin: 3rem 0
+}
+
+.main img{
+    margin-bottom: 2.5rem;
+    height: 40rem;
+    width: 100%;
+}
+
+/*h2*/
+.morea{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/**/
+/**/
+/**/
+/**/
+/*INITIAL*/
+.ochenta{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
+}
+.ffive{
+    width: 40%;
+    background-color: white;
+    height: auto;
+    padding: 1.5rem;
+    border-radius: 9px;
+}
+.ffive:nth-child(2){
+    margin-left: 20%;
+}
+.ffive img{
+    border-style: none;
+    height: 25rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.TwoB{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+.TwoB button{
+    background-color: black;
+    color: white;
+    font-size: 1.55rem;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+.TwoB a:nth-child(2){
+    margin-left: 2rem;
+}
+.TwoB button:nth-child(2){
+    margin-left: 4rem;
+}
+h2{
+    font-size: 2rem;
+    width: 90%;
+    font-weight: 700;
+}
+.TwoB p{
+    font-weight: 300;
+    font-size: 12px;
+}
+/*FOOTER*/
+.footer{
+    padding-top: 24rem;
+    margin-top: -18rem;
+    padding-bottom: 5rem;
+}
+.fheader{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-top: solid 2px rgb(61, 61, 61);
+    
+}
+.mover{
+    margin-left: 25%;
+    margin-top: 3rem;
+}
+
+
+
+/*END*/
+.end{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5rem;
+}
+.end p{
+    width: 40%;
+    text-align: initial;
+    font-weight: 500;
+}
+.Redes{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 60%;
+}
+.Redes a{
+    width: 6rem;
+    height: 6rem;
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    border-radius: 3rem;
+}
+.Redes i{
+    font-size: 4rem;
+    background-color: #d4dff0;
+    border-radius: 3rem;
+    padding: 0.7rem;
+    margin: 0.3rem;
+    width: 90%;
+}
+/**/
+.nav-icon{
+    display: none;
+}
+@media(max-width: 768px){
+    
+    .Noventa{
+        padding-top: 6rem;
+    }
+    /*header*/
+    .header{
+        padding-top: 4rem;
+    }
+    .diezp {
+        width: 25%;
+    }
+    .setenop{
+        width: 50%
+    }
+    .trecep{
+        width: 25%;
+    }
+    
+    .lista a{
+        margin-bottom: 2.5rem;
+    }
+    /**/
+    .cincuenta {
+        width: 70%;
+    }
+    .ffive:nth-child(2) {
+        margin-left: 3%;
+    }
+    .ffive {
+        width: 48%;
+    }
+    .ffive img {
+        height: 20rem;
+    }
+    /*FOOTER*/
+    .mover{
+        margin-left: 1rem;
+    }
+    .lista{
+        margin-left: 5%;
+    }
+    .mover .lista a{
+        background-image: none;
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+    .mover .lista a:nth-child(3){
+        display: none;
+    }
+    .mover .lista a:nth-child(5){
+        display: none;
+    }
+    .veinp img{
+        width: 100%;
+    }
+    
+    .end p{
+        width: 100%;
+        text-align: initial;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .Redes{
+        width: 50%;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        padding-left: 0;
+        margin-top: -0.1rem;
+    }
+    .Redes a:nth-child(2){
+        margin-left: 1rem;
+    }
+    .Redes a:nth-child(3){
+        margin-left: 1rem;
+    }
+}
+@media(max-width: 500px){
+    .nav-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 3rem;
+        margin-left: 80%;
+    }
+    
+    .nav-content {
+        position: relative;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+    
+    .nav-content.active {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-left: -10%;
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 8rem;
+        text-align: center;
+    }
+    .Noventa{
+        padding-top: 6rem;
+    }
+    /*header*/
+    .header{
+        padding-top: 4rem;
+    }
+    .setenop {
+        width: 100%;
+    }
+    .diezp {
+        width: 25%;
+    }
+    .trecep{
+        display: none;
+    }
+    .lista a{
+        background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+        /* -webkit-background-clip: text; */
+        /* color: transparent; */
+        border-radius: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    /**/
+    .cincuenta {
+        width: 90%;
+        text-align: center;
+    }
+    .main {
+        width: 70%;
+    }
+    .ochenta {
+        width: 95%;
+    }
+    .ffive img {
+        height: 12rem;
+    }
+    
+    /*FOOTER*/
+    .footer{
+        padding-bottom: 16rem;
+    }
+    .fheader{
+        display: flex;
+        flex-direction: column;
+    }
+    .mover{
+        margin-left: 1rem;
+    }
+    .lista{
+        margin-left: 15%;
+    }
+    .mover .lista a{
+        background-image: none;
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+    .mover .lista a:nth-child(3){
+        display: none;
+    }
+    .mover .lista a:nth-child(5){
+        display: none;
+    }
+    .veinp img{
+        width: 100%;
+    }
+    .end{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .end p{
+        width: 100%;
+        text-align: initial;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .Redes{
+        width: 50%;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        padding-left: 0;
+    }
+    .Redes a:nth-child(2){
+        margin-left: 1rem;
+    }
+    .Redes a:nth-child(3){
+        margin-left: 1rem;
+    }
+}
+@media(max-width: 490px){
+    .ochenta {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+    .ffive:nth-child(2) {
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+    .ffive {
+        width: 100%;
+    }
+    .ffive img {
+        height: 20rem;
+    }
+}
+@media(max-width: 450px){
+    h1 {
+        font-size: 3.7rem;
+    }   
+    #IMG {
+        height: 25rem;
+    } 
+    .ochenta {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+    .ffive img {
+        height: 19rem;
+    }
+    .ffive {
+        width: 100%;
+    }
+    .ffive:nth-child(2) {
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+    .mover {
+        margin-left: 0;
+    }
+    .lista {
+        margin-left: 8%;
+    }
+}
+@media(max-width: 400px){
+    h1 {
+        font-size: 3rem;
+    }
+    #IMG {
+        height: 20rem;
+    }
+    .main {
+        width: 80%;
+    }
+    .ochenta {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+    .ffive {
+        width: 100%;
+    }
+    .ffive:nth-child(2) {
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+    .mover {
+        margin-left: 0;
+    }
+    .lista {
+        margin-left: 0;
+    }
+}

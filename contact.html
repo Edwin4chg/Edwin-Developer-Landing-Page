@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--YO-->
+    <title>Edwin Chigne Chigne</title>
+    <meta name="description" content="Edwin Chigne es un diseñador de UI/UX y desarrollador web con sede en Perú. Se especializa en diseño UI/UX, web receptiva y desarrollo visual.">
+    <meta name="keywords" content="Edwin Chigne contáctar">
+    <meta name="author" content="Edwin Chigne">
+    <link rel="shortcut icon" href="img/edwinchigne.svg">
+    <!--STYLES-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!--FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/8aa31bfc1b.js" crossorigin="anonymous"></script>
+</head>
+<body class="BGray">
+    <header class="BGray" id="subir">
+        <div class="header">
+            <div class="diezp">
+                <a href="index.html"><img src="img/logo.svg" alt=""></a>
+            </div>
+            <nav class="setenop">
+                <div class="nav-icon" onclick="toggleNav()">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>            
+                <div id="nav-content" class="lista nav-content">
+                    <a href="index.html">Inicio</a>
+                    <a href="services.html">Servicios</a>
+                    <a href="projects.html">Projectos</a>
+                    <a href="about.html">Edwin</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+            </nav>
+            <div class="trecep">
+                <div><a href="contact.html">CONTÁCTAME</a></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="divide" >
+            <div class="cuacinco">
+                <h1>Contáctar</h1>
+                <p class="parra">¿Tienes un proyecto en mente? ¿Buscas asociarte o trabajar juntos? Comuníquese a través del formulario y me pondré en contacto con usted en las próximas 24 horas.</p>
+                <div class="mmm">
+                    <a href="mailto:test@edwin4chg.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="subirr" href="mailto:test@edwin4chg.com">test@edwin4chg.com</a>
+                </div>
+                <div class="mmm">
+                    <a href="tel:+51901551841"><i class="fa-solid fa-phone"></i></a>
+                    <a class="subirr" href="tel:+51999999999">+51 999-999-999</a>
+                </div>
+            </div>
+            <div class="cuacinco">
+                <form  method="post" action="pdf/correo.php">
+                    <label for="name">Su nombre</label><br>
+                    <input type="text" id="name" name="name" placeholder="Introduzca su nombre" required><br>
+                    <label for="email">Su E-mail</label><br>
+                    <input type="email" id="email" name="email" placeholder="📧 Introduzca su e-mail" required><br>
+                    <label for="budget">Su presupuesto</label><br>
+                    <input type="number" id="budget" name="budget" placeholder="💵 100-1k"><br>
+                    <label for="message">Cuéntame un poco más ¿Qué estás buscando?</label><br>
+                    <textarea id="message" name="message"></textarea><br>
+                    <input class="Input enviar" type="submit" value="APLIQUE AHORA">
+                </form>                   
+            </div>
+        </div>
+        <div class="divide">
+            <div class="cuacinco">
+                <h2>Algunas Preguntas <span>Frecuentes</span></h2>
+                <p class="parra">Respuestas a las preguntas candentes en tu mente.</p>
+                <button class="h3">
+                    <a href="#subir"><h3>CONTÁCTAME</h3></a>
+                </button>
+            </div>
+            <div class="cuacinco">
+                <div class="questions">
+                    <h2>How long does a website take to build?</h2>
+                    <button onclick="mostrarParrafo()"><i class="fa-solid fa-eye"></i></button>
+                </div>
+                <p id="miParrafo" style="display:none"><br>The time it takes to create a website can vary greatly depending on the complexity and scale of the project, as well as the requirements and technologies used.<br>
+                For a simple brochure-style website, it can only take a few days to a few weeks to complete. However, for a more complex e-commerce website or web application, it could take several weeks or even months or longer to create. 
+                Factors that can affect the development time of a website include:
+                <br><br>
+                - The number of pages and functions that need to be built.<br>
+                - The complexity of design and layout.<br>
+                - The level of customization and interactivity required.<br>
+                - The need for integrations with other systems or APIs.<br>
+                - The number of people working on the project and their functions.
+                <br><br>
+                It is important to note that building a website is an iterative process, and the timeline may change as the project progresses and new requirements or issues are discovered.</p>
+                <div class="questions">
+                    <h2>How much does a website cost?</h2>
+                    <button onclick="mostrarParrafo2()"><i class="fa-solid fa-eye"></i></button>
+                </div>
+                <p id="mp2" style="display:none"><br>
+                    All templates listed on edwin.edwin4chg.com are available for free download. We also offer paid/pro versions with more options and features. You can use the free versions in your personal or commercial projects as long as you comply with our exclusive license.
+                    <br><br>
+                    It is also a good option to test, check the code and find out which template will work best for you. You can upgrade to the pro version later without losing your customization. Please find out the license comparison. <a id="LINK" href="license.html">LINK</a>
+                </p>
+                <div class="questions">
+                    <h2>I don't have a design, can you build it for me?</h2>
+                    <button onclick="mostrarParrafo3()"><i class="fa-solid fa-eye"></i></button>
+                </div>
+                <p id="mp3" style="display:none"><br> Obviamente que si, me encanta crear interfaces, sitios web y aplicaciones que deleiten a los usuarios y ayuden a las empresas a crecer.</p>
+                <div class="questions">
+                    <h2>Do you provide SEO as well?</h2>
+                    <button onclick="mostrarParrafo4()"><i class="fa-solid fa-eye"></i></button>
+                </div>
+                <p id="mp4" style="display:none"><br>Yes, I work under certain SEO parameters, such as: Use Meta Tags, load speed analysis, internal and external links, and so on</p>
+                <div class="questions">
+                    <h2>Will my website load quickly?</h2>
+                    <button onclick="mostrarParrafo5()"><i class="fa-solid fa-eye"></i></button>
+                </div>
+                <p id="mp5" style="display:none"><br>Yes, I analyze the loading speed, I reduce the weight of the images, and so on.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="BGray footer">
+        <div class="fheader">
+            <div class="veinp">
+                <a href="index.html" ><img src="img/edwinchigne footer.svg" alt=""></a>
+            </div>
+            <nav class="setenop mover">
+                <div class="lista">
+                    <a href="index.html">Inicio</a>
+                    <a href="services.html">Servicios</a>
+                    <a href="projects.html">Projectos</a>
+                    <a href="about.html">Edwin</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+            </nav>
+        </div>
+        <div class="end">
+            <p>© Developed by Edwin Chigne</p>
+            <div class="Redes">
+                <a href="https://www.linkedin.com/in/edwin4chg/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/Edwin4chg"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/edwin4chg/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,873 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/*Resetear los rems => 62.5% equivalga a 10 px  de 16px, del tamaño original*/
+
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    width: 100%;
+    text-align: center;
+
+}
+/*lo de arriba tienes que ir si o si, siempre*/
+a{
+    text-decoration:none;
+    color: black;
+}
+/*HEADER*/
+.BGray{
+    background-color: #d4dff0;
+}
+header{
+    height: auto;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: .5rem;
+}
+.diezp{
+    width: 10%;
+}
+.diezp img{
+    width: 100%;
+    height: 8rem;
+}
+.setenop{
+    width: 78%;
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+    margin-left: 13rem;
+    height: 100%;
+    padding-top: 2.5rem;
+}
+.lista a{
+    margin-right: 2rem;
+}
+.trecep{
+    width: 12%;
+}
+.trecep div{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 4rem;
+    padding-top: 0.2rem;
+    margin-top: 1.5rem;
+    border-radius: 3rem;
+}
+.trecep a{
+    color: white;
+    font-size: 1.8rem;
+}
+.noventa{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*MY INF*/
+.iam{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+.cincuenta{
+    text-align: initial;
+    width: 40%;
+}
+h1{
+    font-weight: 600;
+    font-size: 6rem;
+}
+h1 span{
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.cincuenta:nth-child(2){
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 8rem;
+}
+.Red{
+    text-align: initial;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+}
+.Red div{
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    border-radius: 3rem;
+    width: 5rem;
+    height: 5rem;
+    padding: 0.8rem;
+}
+.Red div:nth-child(2){
+    margin: 0 2rem 0 2rem
+}
+.Red i{
+    font-size: 3.5rem;
+}
+/*IMGS*/
+.imgs{
+    display: flex;
+    flex-direction: row;
+    height: 50rem;
+    margin-bottom: 8rem;
+    margin-top: -3rem;
+}
+.treinta{
+    width: 30%;
+}
+.treinta img{
+    width: 90%;
+    height: 50rem;
+    margin: auto;
+    
+}
+.cuarenta{
+    width: 40%;
+}
+.cuarenta img{
+    width: 90%;
+    height: 50rem;
+    margin: auto;
+}
+.middle img{
+    height: 23rem;
+}
+.middle img:nth-child(2){
+    margin-top: 4rem;
+}
+/* ///////////////////////// */
+.timee{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
+}
+.tp{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.borders{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-left: solid gray 2px;
+    border-right: solid gray 2px;
+}
+h2{
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    -webkit-background-clip: text;
+    color: transparent; 
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+/*EXPERIENCE*/
+.linea{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
+}
+.cuafive{
+    width: 45%;
+    text-align: initial;
+}
+.cuafive:nth-child(2){
+    margin-left: 10%;
+}
+
+.babajo{
+    border-bottom: solid 2px gray;
+    height: 10rem;
+    padding-top: 2rem;
+}
+.babajo h3{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.babajo p{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.yyear{
+    margin: -3rem 0 0 60%;
+}
+/*COMPANIES*/
+#h2 span{
+    color: black;
+}
+#companies{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#companies img{
+    width: 100%;
+}
+/*ME*/
+.INF-red{
+    height: 63rem;
+    margin-bottom: 2rem;
+    
+}
+.INF-red img{
+    width: 50%;
+    margin-left: -25%;
+    height: 55rem;
+}
+.INFF{
+    border: solid black;
+    background-color: black;
+    color: white;
+    margin: -41rem 0 0 50%;
+    width: 45rem;
+    height: 27rem;
+    position: sticky;
+    z-index: 100;
+    padding: 3rem;
+    text-align: initial;
+}
+.INFF h2{
+    font-weight: 600;
+    margin-top: -3rem;
+}
+.socialN{
+    border-top: solid gray 2px;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.socialN i{
+    font-size: 2rem;
+}
+#SN:nth-child(2){
+    margin-left: 13%;
+}
+#SN:nth-child(3){
+    margin-left: 13%;
+}
+#SN:nth-child(4){
+    margin-left: 13%;
+}
+#SN:nth-child(5){
+    margin-left: 13%;
+}
+#SN:nth-child(6){
+    margin-left: 13%;
+}
+
+/*FOOTER*/
+.footer{
+    padding-top: 24rem;
+    margin-top: -18rem;
+    padding-bottom: 5rem;
+}
+.fheader{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-top: solid 2px rgb(61, 61, 61);
+    
+}
+.mover{
+    margin-left: 25%;
+    margin-top: 3rem;
+}
+
+
+
+/*END*/
+.end{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5rem;
+}
+.end p{
+    width: 40%;
+    text-align: initial;
+    font-weight: 500;
+}
+.Redes{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 60%;
+}
+.Redes a{
+    width: 6rem;
+    height: 6rem;
+    background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+    border-radius: 3rem;
+}
+.Redes i{
+    font-size: 4rem;
+    background-color: #d4dff0;
+    border-radius: 3rem;
+    padding: 0.7rem;
+    margin: 0.3rem;
+    width: 90%;
+}
+@media(max-width: 480px){
+    .nav-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 3rem;
+        margin-left: 80%;
+    }
+    
+    .nav-content {
+        position: relative;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+    
+    .nav-content.active {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-left: -10%;
+        font-size: 5rem;
+        font-weight: 800;
+        margin-top: -5rem;
+        margin-bottom: 8rem;
+    }
+
+    /*header*/
+    .header{
+        padding-top: 4rem;
+    }
+    .diezp {
+        width: 25%;
+    }
+    .trecep{
+        display: none;
+    }
+    .lista a{
+        background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+        /* -webkit-background-clip: text; */
+        /* color: transparent; */
+        border-radius: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    /*FOOTER*/
+    .footer{
+        padding-bottom: 12rem;
+    }
+    .fheader{
+        display: flex;
+        flex-direction: column;
+    }
+    .mover{
+        margin-left: 1rem;
+    }
+    .lista{
+        margin-left: 0;
+    }
+    .mover .lista a{
+        background-image: none;
+        font-size: 2rem;
+    }
+    .end{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .end p{
+        width: 100%;
+        text-align: initial;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .Redes{
+        width: 50%;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        padding-left: 0;
+    }
+    .Redes a:nth-child(2){
+        margin-left: 1rem;
+    }
+    .Redes a:nth-child(3){
+        margin-left: 1rem;
+    }
+}
+/**/
+.nav-icon{
+    display: none;
+    
+}
+@media(max-width: 768px){
+    
+    .Noventa{
+        padding-top: 6rem;
+    }
+    /*header*/
+    .header{
+        padding-top: 4rem;
+    }
+    .diezp {
+        width: 25%;
+    }
+    .setenop{
+        width: 50%
+    }
+    .trecep{
+        width: 25%;
+    }
+    
+    .lista a{
+        margin-bottom: 2.5rem;
+    }
+    /**/
+    .iam {
+        display: flex;
+        flex-direction: column;
+    }
+    .cincuenta {
+        text-align: initial;
+        width: 100%;
+    }
+    .cincuenta:nth-child(2) {
+        width: 60%;
+        margin-left: 0;
+        margin-top: -5rem;
+    }
+    .imgs {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin-bottom: 8rem;
+        margin-top: 4rem;
+    }
+    .treinta img {
+        width: 90%;
+        height: 40rem;
+        margin: auto;
+    }
+    .cuarenta img{
+        height: 40rem;
+    }
+    .middle img{
+        height: 19rem;
+    }
+    .middle img:nth-child(2) {
+        margin-top: 1rem;
+    }
+    /**/
+    .timee{
+        width: 100%;
+    }
+    .treinta {
+        width: 30%;
+    }
+    .borders{
+        width: 50%;
+    }
+    .treinta h2{
+        margin-top: -1rem;
+        margin-bottom: -2rem;
+    }
+    .tp {
+        width: 100%;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+    }
+    /**/
+    .linea {
+        display: flex;
+        flex-direction: column;
+    }
+    .cuafive {
+        width: 55%;
+    }
+    .cuafive:nth-child(2) {
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+    .cuafive h2{
+        margin-bottom: -3rem;
+    }
+    /**/
+    .INF-red img {
+        width: 70%;
+        margin-left: -20%;
+        height: 55rem;
+    }
+    .INFF {
+        margin: 0;
+        /* margin: -41rem 0 0 40%; */
+        width: 40rem;
+        height: 30rem;
+    }
+    #SN:nth-child(6) {
+        margin-left: 10%;
+    }
+    /*FOOTER*/
+    .mover{
+        margin-left: 1rem;
+    }
+    .lista{
+        margin-left: 5%;
+    }
+    .mover .lista a{
+        background-image: none;
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+    .mover .lista a:nth-child(3){
+        display: none;
+    }
+    .mover .lista a:nth-child(5){
+        display: none;
+    }
+    .veinp img{
+        width: 100%;
+    }
+    
+    .end p{
+        width: 100%;
+        text-align: initial;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .Redes{
+        width: 50%;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        padding-left: 0;
+        margin-top: -0.1rem;
+    }
+    .Redes a:nth-child(2){
+        margin-left: 1rem;
+    }
+    .Redes a:nth-child(3){
+        margin-left: 1rem;
+    }
+}
+@media(max-width: 500px){
+    .nav-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 3rem;
+        margin-left: 80%;
+    }
+    
+    .nav-content {
+        position: relative;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+    
+    .nav-content.active {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-left: -10%;
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 8rem;
+    }
+    .Noventa{
+        padding-top: 6rem;
+    }
+    /*header*/
+    .header{
+        padding-top: 4rem;
+    }
+    .setenop {
+        width: 100%;
+    }
+    .diezp {
+        width: 25%;
+    }
+    .trecep{
+        display: none;
+    }
+    .lista a{
+        background-image: linear-gradient(to right, #1c92d2, #f2fcfe);
+        /* -webkit-background-clip: text; */
+        /* color: transparent; */
+        border-radius: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    /**/
+    h1{
+        font-size: 7rem;
+    }
+    .cincuenta:nth-child(2) {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -5rem;
+    }
+    .treinta img {
+        height: 30rem;
+    }
+    .cuarenta img {
+        height: 30rem;
+    }
+    .middle img {
+        height: 14rem;
+    }
+    .timee {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10rem;
+    }
+    .timee .treinta {
+        width: 100%;
+    }
+    .borders{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        border-left: none;
+        border-right: none;
+        border-top: solid gray 2px;
+        border-bottom: solid gray 2px;
+        padding: 2rem 0;
+    }   
+    .treinta h2 {
+        font-size: 5rem;
+    }
+    /**/
+    .cuafive {
+        width: 80%;
+    }
+    .cuafive h2 {
+        font-size: 5rem;
+    }
+    .babajo{
+        height: 12rem;
+    }
+    .babajo h3 {
+        /* font-weight: 600; */
+        font-size: 2.5rem;
+    }
+    .babajo p{
+        font-size: 1.5rem;
+    }
+    .yyear {
+        margin: -4.5rem 0 0 60%;
+    }
+    .INF-red img {
+        width: 100%;
+        margin-left: 0;
+        height: 45rem;
+    }
+    .INFF {
+        margin: -10rem 0 0 5%;
+    }
+    /*FOOTER*/
+    .footer{
+        padding-bottom: 16rem;
+    }
+    .fheader{
+        display: flex;
+        flex-direction: column;
+    }
+    .mover{
+        margin-left: 1rem;
+    }
+    .lista{
+        margin-left: 15%;
+    }
+    .mover .lista a{
+        background-image: none;
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+    .mover .lista a:nth-child(3){
+        display: none;
+    }
+    .mover .lista a:nth-child(5){
+        display: none;
+    }
+    .veinp img{
+        width: 100%;
+    }
+    .end{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .end p{
+        width: 100%;
+        text-align: initial;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .Redes{
+        width: 50%;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        padding-left: 0;
+    }
+    .Redes a:nth-child(2){
+        margin-left: 1rem;
+    }
+    .Redes a:nth-child(3){
+        margin-left: 1rem;
+    }
+}
+@media(max-width: 490px){
+    .timee{
+        width: 60%;
+    }
+    .cuafive:nth-child(1) h2 {
+        /* font-size: 5rem; */
+        margin-top: -5rem;
+    }
+    .cuafive h2 {
+        /* font-size: 5rem; */
+        width: 120%;
+    }
+    .INFF {
+        margin: 0;
+        margin: -12rem 0 0 7%;
+        width: 35rem;
+        /* height: 30rem; */
+    }
+    #SN:nth-child(2) {
+        margin-left: 10%;
+    }
+    #SN:nth-child(3) {
+        margin-left: 10%;
+    }
+    #SN:nth-child(4) {
+        margin-left: 10%;
+    }
+    #SN:nth-child(5) {
+        margin-left: 10%;
+    }
+    #SN:nth-child(6) {
+        margin-left: 10%;
+    }           
+}
+@media(max-width: 450px){
+    .nav-content.active{
+        margin-top: 5rem;
+    }
+    .nav-content.active {
+        margin-bottom: 0;
+    }
+    h1{
+        font-size: 6rem;
+    }
+    .cuafive {
+        width: 100%;
+    }
+    .cuafive h2{
+        width: 100%;
+    }
+    .INFF{
+        margin: -12rem 0 0 3%;
+    }
+    .lista {
+        margin-left: 10%;
+    }
+}
+@media(max-width: 370px){
+    .nav-content.active {
+        margin-top: 0;
+    }
+    h1{
+        font-size: 4.9rem;
+    }
+    .imgs {
+        display: flex;
+        flex-direction: column;
+    }
+    .treinta {
+        width: 100%;
+    }
+    .cuarenta {
+        width: 100%;
+    }
+    .imgs img{
+        border-radius: 2rem;
+    }
+    .timee {
+        width: 80%;
+    }
+    .borders {
+        margin-left: 0%;
+        margin-right: 0;
+    }
+    .babajo h3 {
+        font-size: 2.2rem;
+    }
+    .babajo {
+        height: 16rem;
+    }
+    .cuafive:nth-child(2) h2 {
+        font-size: 4rem;
+        width: 100%;
+    }
+    .INF-red img {
+        /* width: 100%; */
+        /* margin-left: 0; */
+        height: 33rem;
+    }
+    .INFF {
+        width: 95%;
+        margin: -8rem 0 0 2.5%;
+        height: 24rem;
+    }
+    .socialN{
+        display: none;
+    }
+    .footer {
+        padding-top: 12rem;
+    }
+    .lista {
+        margin-left: 0%;
+    }
+}

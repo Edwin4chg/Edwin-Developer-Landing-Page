@@ -1,0 +1,406 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/*Resetear los rems => 62.5% equivalga a 10 px  de 16px, del tamaño original*/
+
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    width: 100%;
+    text-align: initial;
+
+}
+/*lo de arriba tienes que ir si o si, siempre*/
+
+/*HEADER*/
+.BGray{
+    background-color: #d4dff0;
+}
+header{
+    height: auto;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: .5rem;
+}
+.diezp{
+    width: 10%;
+}
+.diezp img{
+    width: 100%;
+    height: 8rem;
+}
+.setenop{
+    width: 78%;
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+    margin-left: 13rem;
+    height: 100%;
+    padding-top: 2.5rem;
+}
+.lista li{
+    margin-right: 2rem;
+}
+.trecep{
+    width: 12%;
+}
+.trecep button{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 4rem;
+    margin-top: 1.5rem;
+    border-radius: 3rem;
+}
+.noventa{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*SECCTION*/
+.arriba{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Initial{
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    font-weight: 900;
+    background-image: linear-gradient(to right, #9747ff, #fa0bc0, #ff3b82, #ff7956, #ffab47);
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 30%;
+}
+h1 span{
+    color: black;
+    font-size: 6.5rem;
+    font-weight: 600;
+}
+.tres{
+    display: flex;
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 7rem;
+}
+.treinta{
+    width: 30%
+}
+.treinta:nth-child(2){
+    margin-left: 5%;
+}
+.treinta:nth-child(3){
+    margin-left: 5%;
+}
+h3{
+    background-image: linear-gradient(to right, #9747ff, #fa0bc0, #ff3b82, #ff7956, #ffab47);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+h2{
+    font-weight: 700;
+}
+.arriba img{
+    height: 50rem;
+    width: 100%;
+}
+/*ABAJO*/
+.End{
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+.End h2{
+    font-size: 3rem;
+    width: 70%;
+    background-image: linear-gradient(to right, #9747ff, #fa0bc0, #ff3b82, #ff7956, #ffab47);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.End h2 span{
+    color: black;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.ari-jo{
+    display: flex;
+    flex-direction: column;
+}
+.ari-jo p{
+    font-weight: 500;
+    margin-top: 3rem;
+}
+/*MAIN*/
+main{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+.things{
+    height: auto;
+}
+.things:nth-child(2){
+    margin-top: 4rem;
+}
+.things:nth-child(3){
+    margin-top: 4rem;
+}
+.things:nth-child(4){
+    margin-top: 4rem;
+}
+.things:nth-child(5){
+    margin-top: 4rem;
+}
+.things h2{
+    font-size: 5rem;
+    width: 45%;
+    font-weight: 600;
+}
+.things h2 span{
+    background-image: linear-gradient(to right, #9747ff, #fa0bc0, #ff3b82, #ff7956, #ffab47);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+.things p{
+    margin: 2rem 0;
+}
+.things img{
+    height: 40rem;
+    width: 100%;
+}
+/*more PROJECTS*/
+.moreP{
+    display: flex;
+    flex-direction: row;
+}
+.cuacinco{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.class{
+    background-image: url("/img/bicileta-ejm.webp");
+    background-position: center;
+    height: 35rem;
+    border-radius: 1rem;
+}
+.oneex{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+    padding-left: 3rem;
+    color: white;
+    margin-top: 5rem;
+}
+.oneex:nth-child(2){
+    margin-left: 10%;
+}
+.oneex h3{
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.ebutton{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#achefour{
+    color: gray;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.ebutton button{
+    background-image: linear-gradient(to right, #9747ff, #fa0bc0, #ff3b82, #ff7956, #ffab47);
+    width: 33%;
+    padding: 0.7rem 0;
+    border-radius: 3rem;
+}
+.ebutton button:nth-child(2){
+    margin-left: 5%;
+}
+/**/
+/**/
+/**/
+/*FOOTER*/
+.footer{
+    /* padding-top: 24rem;
+    margin-top: -18rem;
+    position: sticky;
+    z-index: -1; */
+    padding-bottom: 5rem;
+}
+.fheader{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-top: solid 2px rgb(61, 61, 61);
+    
+}
+.mover{
+    margin-left: 50%;
+    margin-top: 3rem;
+}
+
+.listaf{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2.5rem;
+}
+.listaf li{
+    margin-right: 2rem;
+}
+
+/*END*/
+.end{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5rem;
+}
+.end p{
+    width: 40%;
+    text-align: initial;
+    font-weight: 500;
+}
+.Redes{
+    width: 90%;
+    text-align: end;
+}
+.Redes button{
+    background-image: linear-gradient(to right, #9747ff, #fa0bc0, #ff3b82, #ff7956, #ffab47);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 3rem;
+}
+.Redes button:nth-child(2){
+    margin: 0 2rem;
+}
+.Redes i{
+    font-weight: 400;
+    font-size: 2.5rem;
+    background-color: #d4dff0;
+    height: 95%;
+    width: 95%;
+    border-radius: 4rem;
+    padding-top: 15%;
+    width: 90%;
+}
+@media(max-width: 480px){
+    .nav-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 3rem;
+        margin-left: 80%;
+    }
+    
+    .nav-content {
+        position: relative;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+    
+    .nav-content.active {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-left: -10%;
+        font-size: 5rem;
+        font-weight: 800;
+        margin-top: -5rem;
+        margin-bottom: 8rem;
+    }
+
+    /*header*/
+    .header{
+        padding-top: 4rem;
+    }
+    .diezp {
+        width: 25%;
+    }
+    .trecep{
+        display: none;
+    }
+    .lista a{
+        background-image: linear-gradient(to right, #9747ff, #fa0bc0, #ff3b82, #ff7956, #ffab47);
+        /* -webkit-background-clip: text; */
+        /* color: transparent; */
+        border-radius: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    /*FOOTER*/
+    .footer{
+        padding-bottom: 12rem;
+    }
+    .fheader{
+        display: flex;
+        flex-direction: column;
+    }
+    .mover{
+        margin-left: 1rem;
+    }
+    .lista{
+        margin-left: 0;
+    }
+    .mover .lista a{
+        background-image: none;
+        font-size: 2rem;
+    }
+    .end{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .end p{
+        width: 100%;
+        text-align: initial;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .Redes{
+        width: 50%;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        padding-left: 0;
+    }
+    .Redes a:nth-child(2){
+        margin-left: 1rem;
+    }
+    .Redes a:nth-child(3){
+        margin-left: 1rem;
+    }
+}
